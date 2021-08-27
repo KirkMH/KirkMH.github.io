@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h1>Create a New Category</h1>
+            <h6 style="color: red;">* All fields are required</h6>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <form method="POST">
+                <input type="hidden" name="csrfmiddlewaretoken" value="O7lJNSaDN02Jac1LZiOQZxVwZZ3ip8P7yRZulVhSJNR76LuPlZNX2tqhoj2ArVbr">
+                
+
+                
+                    <div class="form-group">
+                        <label for="id_category_name">Category Name:</label>
+                        <input type="text" name="category_name" maxlength="100" class="form-control" required id="id_category_name">
+                        
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="id_active">Active:</label>
+                        <input type="checkbox" name="active" class="form-control" id="id_active" checked>
+                        
+                    </div>
+                
+
+                <div class="form-group">
+                    <button class="btn btn-success">
+                        <span class="glyphicon glyphicon-ok"></span> Save
+                    </button>
+
+                    <a href="/inventory/category_list" class="btn btn-default">Cancel</a>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
